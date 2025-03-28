@@ -28,6 +28,12 @@ const App = () => {
         >
           Download QR <Download />
         </a>
+        <div>
+          <h1 className="text-xl font-bold">Account Details.</h1>
+          <p className="tracking-wider"><span className="font-medium text-gray-600">Account Holder Name:</span> Banti Singha.</p>
+          <p className="tracking-wider"><span className="font-medium text-gray-600">Account Number:</span> 33382625615</p>
+          <p className="tracking-wider"><span className="font-medium text-gray-600">IFSC Code:</span> SBIN0000106</p>
+        </div>
         <h1 className="text-center text-gray-900 text-2xl font-semibold leading-none tracking-wide">
           Support My Husband's Battle - Raise Funds for Colon Cancer Treatment
         </h1>
@@ -39,12 +45,16 @@ const App = () => {
           against this life-threatening disease.
         </p>
       </div>
+
       <div className="px-6 mt-10">
         <div className="w-full p-4 bg-zinc-200 rounded-xl">
           <div className="w-full h-[100px] overflow-hidden ">
             <img src="medicalproof.jpg" alt="" className="rounded-md" />
           </div>
-          <span onClick={openModal} className="inline-flex items-center px-6 py-2 rounded-full text-sm mt-4 bg-zinc-800 font-bold text-zinc-300">
+          <span
+            onClick={openModal}
+            className="inline-flex items-center px-6 py-2 rounded-full text-sm mt-4 bg-zinc-800 font-bold text-zinc-300"
+          >
             See full document. <MoveRight />
           </span>
         </div>
