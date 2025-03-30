@@ -1,5 +1,5 @@
 import React from "react";
-import { Download, MoveRight } from "lucide-react";
+import { Download, MoveRight, Phone } from "lucide-react";
 
 const App = () => {
   const openModal = () => {
@@ -28,21 +28,46 @@ const App = () => {
         >
           Download QR <Download />
         </a>
-        <div>
-          <h1 className="text-xl font-bold">Account Details.</h1>
-          <p className="tracking-wider"><span className="font-medium text-gray-600">Account Holder Name:</span> Banti Singha.</p>
-          <p className="tracking-wider"><span className="font-medium text-gray-600">Account Number:</span> 33382625615</p>
-          <p className="tracking-wider"><span className="font-medium text-gray-600">IFSC Code:</span> SBIN0000106</p>
-        </div>
+      </div>
+      <div className="w-full mt-10 flex flex-col items-center justify-center gap-5 px-6">
+        <h1 className="text-xl font-bold">Account Details.</h1>
+        <p className="tracking-wider">
+          <span className="font-medium text-gray-600">
+            Account Holder Name:
+          </span>{" "}
+          Banti Dey.
+        </p>
+        <p className="tracking-wider">
+          <span className="font-medium text-gray-600">Account Number:</span>{" "}
+          33382625615
+        </p>
+        <p className="tracking-wider">
+          <span className="font-medium text-gray-600">IFSC Code:</span>{" "}
+          SBIN0000106
+        </p>
+      </div>
+      <div className="w-full mt-10 flex flex-col px-6 items-center justify-center gap-5">
+        <h1 className="text-xl text-zinc-900 font-bold">Contact Details.</h1>
+        <p className="font-medium flex items-center justify-center gap-2">
+          <Phone size={16}/>
+          Banti Dey - 8250461525
+        </p>
+        <p className="font-medium flex items-center justify-center gap-2">
+          <Phone size={16}/>
+          Kobita Singha - 6296202978
+        </p>
+      </div>
+      <div className="w-full mt-10 flex flex-col items-center justify-center gap-5 px-6">
         <h1 className="text-center text-gray-900 text-2xl font-semibold leading-none tracking-wide">
           Support My Husband's Battle - Raise Funds for Colon Cancer Treatment
         </h1>
         <p className="text-gray-600">
-          My name is Banti Singha, and I am raising funds for my husband,
-          Prosenjit Singha, who has been battling Colon Cancer for the past
-          three months. He is currently undergoing treatment at AIG Hospitals,
-          Hyderabad, and requires urgent medical care to continue his fight
-          against this life-threatening disease.
+          <span className="font-bold">My name is Banti Dey (Singha)</span> , and
+          I am raising funds for my husband, Prosenjit Singha, who has been
+          battling Colon Cancer for the past three months. He is currently
+          undergoing treatment at AIG Hospitals, Hyderabad, and requires urgent
+          medical care to continue his fight against this life-threatening
+          disease.
         </p>
       </div>
 
